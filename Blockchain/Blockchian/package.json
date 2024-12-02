@@ -1,0 +1,76 @@
+{
+  "name": "trinity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khsabhishek/Trinity.git"
+  },
+  "author": "khsabhishek <52825489+khsabhishek@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/providers": "^5.4.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-foundry": "^1.1.2",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/hardhat-upgrades": "^3.0.3",
+    "@typechain/ethers-v5": "^6.0.5",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=12.0.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^6.13.3",
+    "hardhat": "^2.22.12",
+    "hardhat-gas-reporter": "^1.0.9",
+    "layerzero-v2": "git+https://github.com/Autonomint/LayerZero-v2.git#lz-upgrade",
+    "solidity-coverage": "0.8.7-viaIR.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.2.0",
+    "@layerzerolabs/devtools-evm-hardhat": "^0.3.11",
+    "@layerzerolabs/lz-evm-messagelib-v2": "^3.0.1",
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.1.18",
+    "@layerzerolabs/lz-evm-protocol-v2": "^3.0.1",
+    "@layerzerolabs/lz-v2-utilities": "^2.3.3",
+    "@layerzerolabs/toolbox-hardhat": "^0.2.24",
+    "@nomicfoundation/hardhat-ignition": "^0.15.6",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.6",
+    "@nomicfoundation/ignition-core": "^0.15.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@pythnetwork/pyth-evm-js": "^1.63.0",
+    "@pythnetwork/pyth-sdk-solidity": "^4.0.0",
+    "@redstone-finance/evm-connector": "^0.6.2",
+    "@typechain/ethers-v6": "^0.5.1",
+    "dotenv": "^16.3.1",
+    "ganache-cli": "^6.12.2",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-tracer": "^3.0.1",
+    "solidity-bytes-utils": "0.8.2"
+  },
+  "description": "This repository contains the smart contracts source code for Autonomint Protocol. The repository uses Hardhat as development environment for compilation, uint testing, deployment tasks and Foundry for invariant testing.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/khsabhishek/Trinity/issues"
+  },
+  "homepage": "https://github.com/khsabhishek/Trinity#readme"
+}
