@@ -1,0 +1,10 @@
+downSideProtectionlimit = ethereum volatility ok but CDS/Borrow volume is 
+
+
+liquidation 
+
+type 1
+
+1. get emited events form the contract and eth price from it.
+2. compare that eth price with the eth price at the time of deposit of all the dorrowers and figure out all the borrowes having highest eth price.
+3. Take some percentage as buffer and rest will be liquidated ( need to figure out the precentage)
