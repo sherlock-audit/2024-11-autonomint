@@ -54,11 +54,61 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: INFURA_ID_MODE_MAINNET ? INFURA_ID_MODE_MAINNET : "https://mode.gateway.tenderly.co", // https://mode.gateway.tenderly.co
+        url: INFURA_ID_MODE_MAINNET ? INFURA_ID_MODE_MAINNET : "", // https://mode.gateway.tenderly.co
         // blockNumber: 15994552
       },
     },
+    sepolia: {
+      url: INFURA_ID_SEPOLIA,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    baseSepolia: {
+      url: INFURA_ID_BASE_SEPOLIA,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    modeSepolia: {
+      url: INFURA_ID_MODE_SEPOLIA,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    optimismSepolia:{
+      url: INFURA_ID_OPT_SEPOLIA,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
   },
+  etherscan: {
+    apiKey: {
+      sepolia: SEPOLIA_API_KEY ? SEPOLIA_API_KEY : "",
+      baseSepolia: BASE_SEPOLIA_API_KEY ? BASE_SEPOLIA_API_KEY : "",
+      modeSepolia: MODE_SEPOLIA_API_KEY ? MODE_SEPOLIA_API_KEY : "",
+      optimisimSepolia: OPT_SEPOLIA_API_KEY ? OPT_SEPOLIA_API_KEY : ""
+    },
+    customChains: [
+      {
+        network: "baseSepolia",
+        chainId: 84532,
+        urls: {
+         apiURL: "https://api-sepolia.basescan.org/api",
+         browserURL: "https://sepolia.basescan.org"
+        }
+      },
+      {
+        network: "modeSepolia",
+        chainId: 919,
+        urls: {
+         apiURL: "https://sepolia.explorer.mode.network/api",
+         browserURL: "https://sepolia.explorer.mode.network/"
+        }
+      },
+      {
+        network: "optimisimSepolia",
+        chainId: 11155420,
+        urls: {
+         apiURL: "https://api-sepolia-optimism.etherscan.io/api",
+         browserURL: "https://sepolia-optimistic.etherscan.io"
+        }
+      }
+    ]
+  }
 };
 
 export default config;
