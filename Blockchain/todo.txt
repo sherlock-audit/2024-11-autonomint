@@ -1,7 +1,0 @@
-1. create cds contract
-2. change
-
-Key points
-1. In cds if protocol is in downsideProtection state depositors who are trying to withdraw their money still have to pay the 
-downside percentage according to their value in pool, if their whole money is not used for downside protection the remaining 
-will be ????. 
